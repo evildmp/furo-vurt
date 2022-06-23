@@ -2,9 +2,12 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex/" /><link rel="search" title="Search" href="#" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../genindex/" /><link rel="search" title="Search" href="../search/" /><link rel="next" title="Python in Africa" href="../python-in-africa/" /><link rel="prev" title="Work in documentation" href="../work-in-documentation/" />
 
-    <meta name="generator" content="sphinx-4.5.0, furo 2022.04.07.dev1"/><title>Search - Daniele Procida</title><link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.04.07.dev1"/>
+        <title>My projects - Daniele Procida</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=62b640a1a90ce59e123998c9d8c82f7e7e8eaa4f" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
@@ -135,7 +138,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -149,10 +152,10 @@
   
   
 </a><div class="sidebar-tree">
-  <ul>
+  <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../">Home</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../work-in-documentation/">Work in documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../my-projects/">My projects</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">My projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../python-in-africa/">Python in Africa</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../colophon/">Colophon</a></li>
 </ul>
@@ -181,23 +184,61 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          
-<noscript>
-<div class="admonition error">
-  <p class="admonition-title">Error</p>
-  <p>
-    Please activate JavaScript to enable the search functionality.
-  </p>
-</div>
-</noscript>
+          <section id="my-projects">
+<h1>My projects<a class="headerlink" href="#my-projects" title="Permalink to this headline">¶</a></h1>
+<p>I don’t create much new software these days, but I still find it a rewarding thing to do when I
+have the time.</p>
+<section id="brachiograph">
+<h2>BrachioGraph<a class="headerlink" href="#brachiograph" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://brachiograph.art">BrachioGraph</a> is the world’s simplest, cheapest drawing robot.</p>
+<p>With a Rasberry Pi, three very cheap servo motors and some household materials, you can build a
+working pen-plotter in an hour or so. It turns out to be an excellent thing to do with children on
+a rainy weekend.</p>
+<style>
+    .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+    .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+</style>
 
-<div id="search-results"></div>
+<div class='embed-container'>
+<iframe src="https://player.vimeo.com/video/372867891" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div></section>
+<section id="c-is-for-camera">
+<h2>C is for Camera<a class="headerlink" href="#c-is-for-camera" title="Permalink to this headline">¶</a></h2>
+<p>I’ve spent a lot of time repairing with old film cameras, sometimes even successfully. They contain
+intricate interlocking mechanisms that implement complex sequential logic in very ingenious ways.</p>
+<figure class="align-default">
+<img alt="" class="wider" src="../_images/canonet.jpg" />
+</figure>
+<p><a class="reference external" href="https://c-is-for-camera.readthedocs.io">C is for Camera</a> uses pure object-oriented Python to
+simulate one of my favourite cameras, the 1972 Canon 35mm rangefinder Canonet GIII QL17.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">camera</span> <span class="kn">import</span> <span class="n">Camera</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">Camera</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">film_advance_lever</span><span class="o">.</span><span class="n">wind</span><span class="p">()</span>
+<span class="go">On frame 0 (of 24)</span>
+<span class="go">Advancing film</span>
+<span class="go">On frame 1 (of 24)</span>
+<span class="go">Cocking shutter</span>
+<span class="go">Applying aperture value ƒ/1.7 to iris</span>
+<span class="go">Cocked</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">shutter_button</span><span class="o">.</span><span class="n">press</span><span class="p">()</span>
+<span class="go">Light meter reading: ƒ1/16</span>
+<span class="go">Applying aperture value ƒ/16 to iris</span>
+<span class="go">Shutter opening for 1/128 seconds</span>
+<span class="go">Shutter closes</span>
+<span class="go">Shutter uncocked</span>
+</pre></div>
+</div>
+<figure class="align-default">
+<img alt="" class="wider" src="../_images/mechanism.jpg" />
+</figure>
+</section>
+</section>
 
         </article>
       </div>
@@ -218,8 +259,28 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">My projects</a><ul>
+<li><a class="reference internal" href="#brachiograph">BrachioGraph</a></li>
+<li><a class="reference internal" href="#c-is-for-camera">C is for Camera</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
@@ -233,8 +294,5 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/tabs.js"></script>
     <script src="../_static/design-tabs.js"></script>
-    
-<script src="../_static/searchtools.js"></script>
-<script src="../_static/language_data.js"></script>
-<script src="../searchindex.js"></script></body>
+    </body>
 </html>
